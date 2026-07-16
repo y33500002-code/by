@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+<title>Kino Mini App</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<script src="https://telegram.org/js/telegram-web-app.js"></script>
+</head>
+<body>
+  <div id="app">
+    <!-- Top bar -->
+    <header class="topbar" id="topbar">
+      <button class="icon-btn" id="backBtn" aria-label="Orqaga" hidden>
+        <svg viewBox="0 0 24 24"><path d="M15 18l-6-6 6-6" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </button>
+      <div class="brand" id="brandTitle">
+        <span class="brand-mark">●</span><span>KINO</span>
+      </div>
+      <button class="icon-btn" id="notifBtn" aria-label="Bildirishnomalar">
+        <svg viewBox="0 0 24 24"><path d="M12 2a6 6 0 0 0-6 6v3.2c0 .6-.2 1.1-.6 1.6L4 15h16l-1.4-2.2c-.4-.5-.6-1-.6-1.6V8a6 6 0 0 0-6-6z" stroke="currentColor" stroke-width="1.8" fill="none" stroke-linejoin="round"/><path d="M9.5 19a2.5 2.5 0 0 0 5 0" stroke="currentColor" stroke-width="1.8" fill="none" stroke-linecap="round"/></svg>
+        <span class="dot" id="notifDot" hidden></span>
+      </button>
+    </header>
+
+    <!-- Film-strip divider (signature element) -->
+    <div class="filmstrip" aria-hidden="true"></div>
+
+    <main id="view" class="view"></main>
+
+    <!-- Bottom nav -->
+    <nav class="tabbar" id="tabbar">
+      <button class="tab" data-tab="home" aria-label="Bosh sahifa">
+        <svg viewBox="0 0 24 24"><path d="M4 11.5 12 5l8 6.5" stroke="currentColor" stroke-width="1.8" fill="none" stroke-linecap="round" stroke-linejoin="round"/><path d="M6 10v9h12v-9" stroke="currentColor" stroke-width="1.8" fill="none" stroke-linejoin="round"/></svg>
+        <span>Bosh sahifa</span>
+      </button>
+      <button class="tab" data-tab="reels" aria-label="Reels">
+        <svg viewBox="0 0 24 24"><rect x="4" y="3" width="16" height="18" rx="3" stroke="currentColor" stroke-width="1.8" fill="none"/><path d="M9 8l6 4-6 4V8z" fill="currentColor"/></svg>
+        <span>Reels</span>
+      </button>
+      <button class="tab" data-tab="search" aria-label="Qidiruv">
+        <svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7" stroke="currentColor" stroke-width="1.8" fill="none"/><path d="M20 20l-4-4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+        <span>Qidiruv</span>
+      </button>
+      <button class="tab" data-tab="profile" aria-label="Profil">
+        <svg viewBox="0 0 24 24"><circle cx="12" cy="8" r="3.5" stroke="currentColor" stroke-width="1.8" fill="none"/><path d="M5 20c1.2-3.8 4.2-6 7-6s5.8 2.2 7 6" stroke="currentColor" stroke-width="1.8" fill="none" stroke-linecap="round"/></svg>
+        <span>Profil</span>
+      </button>
+    </nav>
+  </div>
+
+  <!-- Toast -->
+  <div id="toast" class="toast" hidden></div>
+
+  <script src="js/mock.js"></script>
+  <script src="js/api.js"></script>
+  <script src="js/state.js"></script>
+  <script src="js/components/card.js"></script>
+  <script src="js/components/player.js"></script>
+  <script src="js/pages/home.js"></script>
+  <script src="js/pages/movie.js"></script>
+  <script src="js/pages/reels.js"></script>
+  <script src="js/pages/search.js"></script>
+  <script src="js/pages/profile.js"></script>
+  <script src="js/pages/admin.js"></script>
+  <script src="js/router.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,27 @@
+{
+  "channels": [],
+  "admins": [
+    8230937340
+  ],
+  "supports": [],
+  "ownerId": 8230937340,
+  "coinSettings": {
+    "daily": 3,
+    "referral": 10,
+    "comment": 2
+  },
+  "premiumPrices": {
+    "1m": 10000,
+    "3m": 25000,
+    "6m": 45000,
+    "1y": 80000
+  },
+  "premiumDiscount": {
+    "3m": 0,
+    "6m": 0,
+    "1y": 0
+  },
+  "premiumBonusCoin": 50,
+  "referralPremiumBonus": 30,
+  "paymentCard": null
+}
